@@ -11,7 +11,7 @@ public class Program01 {
             System.out.println(n + " không phải số nguyên tố");
         } else {
             boolean soNguyenTo = true;
-            for (int i = 2; i <= Math.sqrt(n); i++) {
+            for (int i = 2; i < n; ++i) {
                 if (n % i == 0) {
                     soNguyenTo = false;
                     break;
